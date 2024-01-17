@@ -7,4 +7,4 @@ Currently working on my Case Study project about bicycle data to find out how we
 
 - How can Clyclistic use digital media to influence casual riders to become members?
 
-This application will include
+
