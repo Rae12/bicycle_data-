@@ -7,4 +7,21 @@ Currently working on my Case Study project about bicycle data to find out how we
 
 - How can Clyclistic use digital media to influence casual riders to become members?
 
+# Quick Links: 
+Data Source: [.divvy-tripdata.csv](https://github.com/Rae12/bicycle_data-/files/13971348/default.tripdata.csv) [accessed on 12/1/23]
 
+# Prepare 
+
+Data Source of Cyclistic’s historical trip data being used to identify trends from 11/13/23 - 12/5/23 that can be downloaded from [divvy-tripdata](https://github.com/Rae12/bicycle_data-/files/13971348/default.tripdata.csv). This data is available by Motivate Inc. & under this [license](https://www.divvybikes.com/data-license-agreement). This is public data that you can use to explore how different customer types are using Cyclistic bikes.  
+
+Data Organization 
+
+Only one file will be use that includes one month of information such as ride id, bike type, start time, end time, start station, end station, start location, end location, & whether the rider is casual or member. The corresonding column names are ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual. 
+
+# Process 
+
+Cleaning & Transformation 
+
+After download of dataset the use of GoogleSheets for preparation of data such as checking data for errors & transformation. During cleaning process there are two columns end_station_name & end_station_id have null values in the dataset that needed to be removed. 
+
+Since there is a start_at & end_at indicating for the time of riding, I created a new column called “ride_length” to calculate the length of the ride then formatted the cells to equate to time; such as =(started_at – ended_at). Also create a new column called day_of_week to calculate the day of the week that each ride started, such as =WEEKDAY(C2,1) 1=Sunday & 7=Saturday. 
