@@ -18,10 +18,21 @@ Data Organization
 
 Only one file will be use that includes one month of information such as ride id, bike type, start time, end time, start station, end station, start location, end location, & whether the rider is casual or member. The corresonding column names are ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual. 
 
+![Columns](https://github.com/Rae12/bicycle_data-/assets/43325274/5d74a3d4-8979-4916-8d27-01334935f8f2)
+
 # Process 
 
 Cleaning & Transformation 
 
 After download of dataset the use of GoogleSheets for preparation of data such as checking data for errors & transformation. During cleaning process there are two columns end_station_name & end_station_id have null values in the dataset that needed to be removed. 
 
-Since there is a start_at & end_at indicating for the time of riding, I created a new column called “ride_length” to calculate the length of the ride then formatted the cells to equate to time; such as =(started_at – ended_at). Also create a new column called day_of_week to calculate the day of the week that each ride started, such as =WEEKDAY(C2,1) 1=Sunday & 7=Saturday. 
+![Columns-Removed](https://github.com/Rae12/bicycle_data-/assets/43325274/9b27b4af-c042-449f-adb8-d094fdab06c7)
+
+Since there is a start_at & end_at indicating for the time of riding, I created a new column called “ride_length” to calculate the length of the ride then formatted the cells to equate to time; such as =(started_at – ended_at). 
+
+![ride_length](https://github.com/Rae12/bicycle_data-/assets/43325274/ed0d6143-50a5-4f7f-8849-6bed9d0abbd1)
+
+Also create a new column called day_of_week to calculate the day of the week that each ride started, such as =WEEKDAY(C2,1) 1=Sunday & 7=Saturday. 
+
+![day_of_week](https://github.com/Rae12/bicycle_data-/assets/43325274/b79490f7-d6a0-4de8-a5ff-06611a047ac1)
+
