@@ -36,3 +36,20 @@ Also create a new column called day_of_week to calculate the day of the week tha
 
 ![day_of_week](https://github.com/Rae12/bicycle_data-/assets/43325274/b79490f7-d6a0-4de8-a5ff-06611a047ac1)
 
+Pivot Tables
+ 1. Find out what is the average time that riders are consume. 
+
+  	a. Create a column called meanride_legnth to find out the average time 
+![Average ride_length pvt](https://github.com/Rae12/bicycle_data-/assets/43325274/21fc1909-63ed-441e-b21d-4bcbd9572721)
+
+ 2. Find out the maximum time that riders consume 
+
+  	a. Create a column called maxride_length to find out the maximum time 
+![Max ride_length pvt](https://github.com/Rae12/bicycle_data-/assets/43325274/94c038b9-a07a-40dc-bd82-40bf15a4d08d)
+
+ 3.Find out the most frequent time riders consume. 
+
+ 	a. Create a column called moderide_length to find out the most frequent 
+
+
+  
