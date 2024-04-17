@@ -9,7 +9,8 @@ Currently working on my Case Study project about bicycle data to find out how we
 
 # Quick Links: 
 Data Source: [.divvy-tripdata.csv](https://github.com/Rae12/bicycle_data-/files/13971348/default.tripdata.csv) [accessed on 12/1/23]
-
+1.Data Exploration.sql
+2.
 # Prepare 
 
 Data Source of Cyclistic’s historical trip data being used to identify trends from 11/13/23 - 12/5/23 that can be downloaded from [divvy-tripdata](https://github.com/Rae12/bicycle_data-/files/13971348/default.tripdata.csv). This data is available by Motivate Inc. & under this [license](https://www.divvybikes.com/data-license-agreement). This is public data that you can use to explore how different customer types are using Cyclistic bikes.  
