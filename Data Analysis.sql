@@ -25,3 +25,4 @@ GROUP BY WeekDay, rideable_type;
 SELECT DISTINCT member_casual, COUNT(member_casual) AS no_of_trips
 FROM `my-project-bicycle-412421.Biycyle.TRIPS`
 GROUP BY member_casual;
+
