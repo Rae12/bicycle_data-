@@ -63,10 +63,10 @@ Pivot Tables
    a. Create a column called maxride_length to find out the maximum time 
 ![Max ride_length pvt](https://github.com/Rae12/bicycle_data-/assets/43325274/94c038b9-a07a-40dc-bd82-40bf15a4d08d)
 
- 3.Find out the most frequent time riders consume. 
+Using R to finish Cleaning & Anlysiing
 
-   a. Create a column called moderide_length to find out the most frequent 
-  
+ In Console
+     
 
 
   
