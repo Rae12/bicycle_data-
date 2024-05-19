@@ -65,8 +65,21 @@ Pivot Tables
 
 Using R to finish Cleaning & Anlysiing
 
- In Console
-     
+Step 1 : In Console
+          
+          install(tidyverse)
 
 
-  
+ Step 2: Upload .csv file to Posit Cloud using R
+
+ [![TUpload]](https://github.com/Rae12/bicycle_data-/assets/43325274/050e2b1c-9c44-4a2f-a642-041f02095133)
+
+Step 3: Remove duplicate & NULL columns
+
+    Untitled_spreadsheet_TRIPS <- Untitled_spreadsheet_TRIPS [, -c(3,4)] -- duplicate
+    Untitled_spreadsheet_TRIPS <- Untitled_spreadsheet_TRIPS [, -c(9,10)] -- NULL
+    Untitled_spreadsheet_TRIPS <- Untitled_spreadsheet_TRIPS [, -c(11,12)] -NULL
+
+Step 4: Create plot to start Visualization
+
+    install.packages("ggplot2")
