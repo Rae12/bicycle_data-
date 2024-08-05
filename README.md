@@ -69,17 +69,23 @@ Step 1 : In Console
           
           install(tidyverse)
 
-
  Step 2: Upload .csv file to Posit Cloud using R
 
- [![TUpload]](https://github.com/Rae12/bicycle_data-/assets/43325274/050e2b1c-9c44-4a2f-a642-041f02095133)
+![Uploading Case Study- TRIPS.csv…]   
 
 Step 3: Remove duplicate & NULL columns
 
-    Untitled_spreadsheet_TRIPS <- Untitled_spreadsheet_TRIPS [, -c(3,4)] -- duplicate
-    Untitled_spreadsheet_TRIPS <- Untitled_spreadsheet_TRIPS [, -c(9,10)] -- NULL
-    Untitled_spreadsheet_TRIPS <- Untitled_spreadsheet_TRIPS [, -c(11,12)] -NULL
+       > View(Case_Study_TRIPS)
+       > Case_Study_TRIPS <- Case_Study_TRIPS [, -c(3,4)]
+       > Case_Study_TRIPS <- Case_Study_TRIPS [, -c(9,10,13,14)]
+*Save manipulated data
 
+> write_csv(Case_Study_TRIPS, "Case_Study_TRIPS.csv")
+
+ >View(Case_Study_TRIPS)
+       > Case_Study_TRIPS <- Case_Study_TRIPS [, -c(3,4)]
+       > Case_Study_TRIPS <- Case_Study_TRIPS [, -c(9,10,13,14)]
 Step 4: Create plot to start Visualization
 
     install.packages("ggplot2")
+    library(ggplot2)
