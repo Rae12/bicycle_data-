@@ -80,12 +80,32 @@ Step 3: Remove duplicate & NULL columns
        > Case_Study_TRIPS <- Case_Study_TRIPS [, -c(9,10,13,14)]
 *Save manipulated data
 
-> write_csv(Case_Study_TRIPS, "Case_Study_TRIPS.csv")
+    > write_csv(Case_Study_TRIPS, "Case_Study_TRIPS.csv")
 
- >View(Case_Study_TRIPS)
-       > Case_Study_TRIPS <- Case_Study_TRIPS [, -c(3,4)]
-       > Case_Study_TRIPS <- Case_Study_TRIPS [, -c(9,10,13,14)]
 Step 4: Create plot to start Visualization
 
     install.packages("ggplot2")
     library(ggplot2)
+Total Ride Count
+
+    Case_Study_TRIPS %>% 
+    +   group_by(member_casual) %>% 
+    +   summarise(ride_count = length(ride_id)) %>%
+    +   ggplot(aes(x = member_casual, y = ride_count, fill = member_casual)) 
+    +   geom_col(position = "dodge") 
+    +   labs(title ="Total rides taken (ride_count) of Members and Casual riders") 
+    +   geom_col(width=0.5, position = position_dodge(width=0.5)) 
+    +   scale_y_continuous(labels = function(x) format(x, scientific = FALSE))
+
+What day of the week did most rider ride?
+
+    Case_Study_TRIPS %>%
+    + mutate(WeekDay = wday(started_time, label = TRUE)) %>%
+    + group_by(member_casual, WeekDay) %>%
+    + summarise(number_of_rides = n(), average_duration = mean(ride_length)) %>%
+    + arrange(member_casual, WeekDay) 
+
+Average duration of Members and Casual riders Vs. Day of the week
+
+    +ggplot(data = Case_Study_TRIPS, mapping = aes(x = WeekDay, y = ride_length, fill = member_casual)) + geom_col(position = "dodge") + labs(title = "Average duration of Members & Casual riders Vs. Day of the week") + geom_col(width = 0.5, position = position_dodge(width = 0.5)) + scale_y_continuous(labels = function(x) format(x, scientiic = FALSE))
+    
