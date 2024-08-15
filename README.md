@@ -97,6 +97,8 @@ Total Ride Count
     +   geom_col(width=0.5, position = position_dodge(width=0.5)) 
     +   scale_y_continuous(labels = function(x) format(x, scientific = FALSE))
 
+![Total Rides](https://github.com/user-attachments/assets/a5395d3b-def8-485c-9bfe-f085e8c7fbc5)
+
 What day of the week did most rider ride?
 
     Case_Study_TRIPS %>%
@@ -105,7 +107,11 @@ What day of the week did most rider ride?
     + summarise(number_of_rides = n(), average_duration = mean(ride_length)) %>%
     + arrange(member_casual, WeekDay) 
 
+![Tibble01](https://github.com/user-attachments/assets/4ac7915a-6b7d-4930-8a78-ecebbc49430e)
+
 Average duration of Members and Casual riders Vs. Day of the week
 
     +ggplot(data = Case_Study_TRIPS, mapping = aes(x = WeekDay, y = ride_length, fill = member_casual)) + geom_col(position = "dodge") + labs(title = "Average duration of Members & Casual riders Vs. Day of the week") + geom_col(width = 0.5, position = position_dodge(width = 0.5)) + scale_y_continuous(labels = function(x) format(x, scientiic = FALSE))
-    
+
+![Average WeekDay](https://github.com/user-attachments/assets/cf2e133a-aee3-48b8-b933-bd0f13e82b92)
+
