@@ -115,3 +115,10 @@ Average duration of Members and Casual riders Vs. Day of the week
 
 ![Average WeekDay](https://github.com/user-attachments/assets/cf2e133a-aee3-48b8-b933-bd0f13e82b92)
 
+# Share
+
+In conclusion for the month of November
+
+1. We have Casual riders active more than Member rider.
+2. On the average, more Member riders are active on Monday & Sunday.
+3. During the weekday, Casual riders are active on Thursday.
